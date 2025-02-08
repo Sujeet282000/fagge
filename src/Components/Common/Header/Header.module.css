@@ -1,0 +1,238 @@
+
+  
+  .header_section {
+    background: #19174C;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    /* position: relative;
+    z-index: 1000; */
+    border-bottom: 1px solid #D9D9D933;
+
+  
+  }
+  .topBar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items:flex-start;
+    gap: 2rem;
+    padding:50px;
+    /* padding-bottom: 70px; */
+    padding-bottom: 0px;
+    margin: 0 auto;
+  }
+
+  .logo img{
+    width: 170px;
+  }
+  
+  
+  /* Search Container */
+  .searchContainer {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding: 0.6rem 1.5rem;
+    padding-left: 4rem;
+    border: 1px solid #5B21FF;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: #000000;
+    background: #F5F5F5;
+
+  }
+  
+  .searchInput:focus {
+ outline: none;
+  }
+  .searchButton {
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .searchIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #34495e;
+    transition: fill  0.3s;
+  }
+  
+  
+  /* Auth Buttons */
+  .authGroup {
+    display: flex;
+    padding: 10px;
+    gap: 1rem;
+  }
+
+
+  
+ 
+  
+  .navLink::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #4353FF;
+    transition: width 0.3s;
+  }
+  
+  
+  .navLink:hover::after {
+    width: 100%;
+  }
+  
+
+  /* Navigation Bar */
+
+  .navList {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    padding-bottom: 2rem;
+    margin: 0;
+    list-style: none;
+    /* max-width: 1440px; */
+    margin: 0 auto;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color:  #FFFFFF;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+    position: relative;
+    padding: 10px 0;
+    transition: color  0.3s;
+  }
+
+  .navLink:hover {
+    color: #4353FF;
+    font-weight: 600;
+  }
+
+
+.navLinkActive {
+  color: #4353FF; 
+  font-weight: 600;
+}
+
+  .btn{
+    background: #4353FF;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+ }
+
+ .btn:hover{
+  background-color: #292C9F;
+  /* border: 1px solid #6841ea; */
+ }
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .topBar {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .searchContainer {
+    max-width: 100%;
+  }
+
+  .authGroup {
+    justify-content: center;
+  }
+
+  .navList {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  .navLink {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .topBar {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 140px;
+  }
+
+  .searchContainer {
+    padding: 5px;
+  }
+
+  .searchInput {
+    font-size: 14px;
+    padding-left: 3rem;
+  }
+
+  .navList {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 12px;
+  }
+
+  .authGroup {
+    gap: 0.5rem;
+  }
+  .navLink {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 6px 20px;
+  }
+}
+
+  
+
+
+.sidebarContainer {
+  position: absolute;
+  /* width: 250px; Adjust as needed */
+  /* top: 30%; */
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  /* border-radius: 8px; */
+  /* padding: 10px; */
+}
+
