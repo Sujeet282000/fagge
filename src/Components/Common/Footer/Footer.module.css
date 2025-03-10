@@ -1,6 +1,7 @@
 .footer_section {
   background-color: #FFFFFF;
   /* color: #000000; */
+  border-top: 1px solid #20185e57;
 
   .footer_container {
       padding: 50px;
@@ -95,11 +96,11 @@
       }
 
       .link {
-          font-size: 12px;
+          font-size: 13px;
       }
 
       .copy {
-          font-size: 12px;
+          font-size: 13px;
       }
 
       .linkedIn {

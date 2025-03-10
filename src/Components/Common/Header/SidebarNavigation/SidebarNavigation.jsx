@@ -6,12 +6,12 @@ import styles from "./SidebarNavigation.module.css";
 // import styles from "./SidebarNavigation.module.css";
 
 const menuItems = [
-  { title: "Personal Protective Equipment (PPE)", href: "/ppe" },
-  { title: "Lifting & Rigging", href: "/lifting-rigging" },
-  { title: "Industrial Oil & Chemicals", href: "/industrial-oil-chemicals" },
-  { title: "Electrical & Lighting", href: "/electrical-lighting" },
-  { title: "Rotary Equipment", href: "/rotary-equipment" },
-  { title: "Industrial Tools & Contractor Equipment", href: "/industrial-tools" },
+  { title: "Personal Protective Equipment (PPE)", href: "/product/ppe" },
+  { title: "Lifting & Rigging", href: "/product/lifting-rigging" },
+  { title: "Industrial Oil & Chemicals", href: "/product/industrial-oil-chemicals" },
+  { title: "Electrical & Lighting", href: "/product/electrical-lighting" },
+  { title: "Rotary Equipment", href: "/product/rotary-equipment" },
+  { title: "Industrial Tools & Contractor Equipment", href: "/product/industrial-tools" },
   {
     title: "Vehicle & Machinery",
     submenu: [
@@ -21,19 +21,18 @@ const menuItems = [
       { title: "Vehicle Category 4", href: "/vehicles/category-4" },
     ],
   },
-  { title: "Cleaning & Hygiene", href: "/cleaning-hygiene" },
-  { title: "Industrial Valves", href: "/industrial-valves" },
-  { title: "Water Treatment", href: "/water-treatment" },
+  { title: "Cleaning & Hygiene", href: "/product/cleaning-hygiene" },
+  { title: "Industrial Valves", href: "/product/industrial-valves" },
+  { title: "Water Treatment", href: "/product/water-treatment" },
 ];
 
-export default function SidebarNavigation() {
+export default function SidebarNavigation({toggleMenu}) {
   const [expandedItem, setExpandedItem] = useState(null);
   const menuRefs = useRef({});
   const navigate = useNavigate();
 
   
     const toggleDropdown = () => {
-       
         navigate('/member/dashboard');
     };
     
@@ -50,23 +49,25 @@ export default function SidebarNavigation() {
             // onClick ={toggleDropdown}
             ref={(el) => (menuRefs.current[item.title] = el)}
           >
-            <div className={styles.menuTitle}>
-              <span className={item.title === "Vehicle & Machinery" ? styles.activeText : ""}>{item.title}</span>
+            <div className={styles.menuTitle} onClick={toggleMenu}>
+              <span className={item.title === "Vehicle & Machinery" ? styles.activeText : ""} >
+              <NavLink key={item.title} to={item.href} className={styles.menutitleText}>
+                    {item.title}
+                  </NavLink>
+              </span>
               {/* {item.submenu && <ChevronRight className={styles.icon} />} */}
             </div>
             {expandedItem === item.title && item.submenu && menuRefs.current[item.title] && (
               <div
                 className={styles.submenuSidebar}
                 style={{
-                  position: 'absolute',
-                  left: '359px',
                   top: menuRefs.current[item.title].offsetTop + 'px',
                 }}
               >
                 {item.submenu.map((subItem) => (
-                  <Link key={subItem.title} href={subItem.href} className={styles.submenuItem}>
+                  <NavLink key={subItem.title} to={subItem.href} className={styles.submenuItem}>
                     {subItem.title}
-                  </Link>
+                  </NavLink>
                 ))}
               </div>
             )}

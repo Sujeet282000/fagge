@@ -2,17 +2,31 @@ import React from "react";
 import { Button } from 'react-bootstrap';
 import styles from "./HeroSection.module.css";
 
+import {  useNavigate } from 'react-router-dom';
+
 export function HeroSection() {
+
+  const navigate = useNavigate();
+
+  const toggleDropdown = () => {
+    navigate('/contact');
+  }
+
   return (
     <section className={styles.heroSection}>
       <div className={styles.container}>
         <div className={styles.leftContent}>
-          <h1 className={styles.heading}>
-            Trusted global leader in procurement, supply chain management, and logistics
-          </h1>
+          <div>
+            <div className={styles.heading}>
+            Seamless Global Procurement & Logistics, Tailored for Your Success
+            </div>
+            <div className={styles.contentpart}>
+            Delivering Reliable, Cost-Effective Solutions for Global Supply Chains
+            </div>
+          </div>
           <div className={styles.buttons}>
-            <Button className={styles.btn}>Our Services</Button>
-            <Button className={styles.btn}>Contact Now</Button>
+            <button onClick={toggleDropdown} className={styles.bttn}>Get a Quote</button>
+            {/* <Button className={styles.bttn}>Contact Now</Button> */}
           </div>
         </div>
         <div className={styles.rightContent}>

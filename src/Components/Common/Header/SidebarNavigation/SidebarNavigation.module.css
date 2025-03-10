@@ -1,64 +1,78 @@
 .sidebarContainer {
-    display: flex;
-  }
-  
-  .sidebar {
-    width: 360px;
-    background: white;
-    /* padding: 20px; */
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .menuItem {
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .menuTitle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 25px;
-    cursor: pointer;
-    transition: background 0.3s;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  
-  .menuTitle:hover {
-    background: #e0e0e0;
-    color: #5B21FF;
-    font-weight: 400;
-  }
-  
-  .icon {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .activeText {
-    /* color: #8257ff; */
-  }
-  
-  .submenuSidebar {
-    width: 250px;
-    background: #f8f8f8;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .submenuItem {
-    display: block;
-    padding: 12px 20px;
-    border-bottom: 1px solid #ddd;
-    color: #000;
+  display: flex;
+}
+
+.sidebar {
+  width: 360px;
+  background: white;
+  /* padding: 20px; */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menuItem {
+  border-bottom: 1px solid #ddd;
+}
+
+.menuTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.menutitleText{
+  color: #000;
     text-decoration: none;
-    transition: background 0.3s;
-    font-size: 16px;
-    font-weight: 400;
+}
+.menuTitle:hover {
+  background: #e0e0e0;
+  color: #5B21FF;
+  font-weight: 400;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.activeText {
+  /* color: #8257ff; */
+}
+
+.submenuSidebar {
+  position: absolute;
+  left: 359px;
+  width: 250px;
+  background: #f8f8f8;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.submenuItem {
+  display: block;
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+  text-decoration: none;
+  transition: background 0.3s;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.submenuItem:hover {
+  color: #000000;
+  background: #e0e0e0;
+  color: #5B21FF;
+}
+
+
+@media (max-width: 768px) {
+  .submenuSidebar {
+    position: absolute;
+    left:190px;
+    width: 180px;
   }
-  
-  .submenuItem:hover {
-    color: #000000;
-    background: #e0e0e0;
-    color: #5B21FF;
-  }
-  
+}

@@ -1,0 +1,772 @@
+
+
+.SeamlessOverviewSection {
+    width: 100%;
+  }
+  
+  .SeamlessBackground {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .SeamlessOverlay {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: flex-start;
+    background: rgb(0 0 0 / 80%);
+    padding: 50px 40px;
+    color: white;
+    padding-top: 100px;
+  }
+  
+  .overlaySection {
+    max-width: 900px;
+    /* margin-top: 50px; */
+  }
+  
+  .SeamlessTitle {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #ffffff;
+  }
+  
+  .SeamlessSubtitle {
+    font-size: 29px;
+    font-weight: 600;
+    color: #d1d5db;
+    margin-bottom: 50px;
+  }
+  
+  .SeamlessText {
+    font-size: 19px;
+    font-weight: 400;
+    color: #e5e7eb;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 1024px) {
+    .SeamlessOverlay {
+      padding: 50px 35px;
+      min-height: 80vh;
+      padding-top: 80px;
+    }
+  
+    .SeamlessTitle {
+      font-size: 40px;
+    }
+  
+    .SeamlessSubtitle {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+  
+    .SeamlessText {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .SeamlessOverlay {
+      padding: 40px 30px;
+      min-height: 75vh;
+      padding-top: 70px;
+    }
+  
+    .SeamlessTitle {
+      font-size: 32px;
+    }
+  
+    .SeamlessSubtitle {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+  
+    .SeamlessText {
+      font-size: 17px;
+      line-height: 1.6;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .SeamlessOverlay {
+      padding: 30px 20px;
+      min-height: 75vh;
+    }
+  
+    .SeamlessTitle {
+      font-size: 30px;
+    }
+  
+    .SeamlessSubtitle {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  
+    .SeamlessText {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+  
+  
+  
+
+  /* ******************************************************* */
+  /* section third 3 */
+  
+  .excellenceContainer {
+      width: 100%;
+      /* background-color: #101047; */
+      padding: 50px 70px;
+      color: white;
+      text-align: left;
+      /* margin-bottom: 100px; */
+    }
+    
+    .btn {
+      background: #5B21FF;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 8px 30px;
+      border: none;
+      border-radius: 5px;
+      color: #FFFFFF;
+      white-space: nowrap;
+    }
+    
+    .btn:hover {
+      background: #5B21FF;
+      /* border: 1px solid #6841ea; */
+    }
+    
+    .authGroup {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      gap: 1rem;
+    }
+    
+    /* Description */
+    .excellenceDescription {
+      font-size: 25px;
+      font-weight: 500;
+      margin: 0 auto 40px;
+      text-align: left;
+      color: #000000;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 50px;
+      /* width: 70%; */
+    }
+
+    .listSection{
+            color: #333;
+          
+          .list {
+            list-style:none;
+            /* padding-left: 20px; */
+            padding-left: 35px;
+          }
+          
+          .list li {
+            margin-bottom: 8px;
+            font-size: 18px;
+          }
+          
+          .bold {
+            font-weight: bold;
+          }
+          
+          .description {
+            margin-top: 10px;
+            color: #555;
+            font-size: 18px;
+            margin-left: 15px;
+          }
+          
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .excellenceContainer {
+        padding: 40px 50px;
+         
+
+      }
+    
+      .excellenceDescription {
+        font-size: 23px;
+        width: 100%;
+      }
+
+      .listSection{
+
+      
+      .list li {
+        font-size: 17px;
+      }
+      
+      .description {
+        font-size: 17px;
+      }
+      
+}
+
+    }
+    
+    @media (max-width: 768px) {
+      .excellenceContainer {
+        padding: 30px 30px;
+  
+    
+      }
+    
+      .excellenceDescription {
+        font-size: 21px;
+        width: 100%;
+      }
+      .listSection{
+      
+        .list{
+          padding-left: 20px;
+        }
+        .list li {
+          font-size: 16px;
+        }
+        
+        .description {
+          font-size: 16px;
+        }
+    }
+        
+    }
+    
+    @media (max-width: 480px) {
+      .excellenceContainer {
+        padding: 30px 20px;
+  
+  
+        .btn{
+          width: 100%;
+        }
+      }
+    
+      .excellenceDescription {
+        font-size: 19px;
+        width: 100%;
+      }
+
+      .listSection{
+      
+        .list{
+          padding-left: 20px;
+        }
+        .list li {
+          font-size: 17px;
+        }
+        
+        .description {
+          font-size: 17px;
+        }
+    }  
+
+      
+    }
+
+
+
+    /* ********************************************************** */
+    
+  /* ******************************************************* */
+  /* section third 3 */
+  
+  .expertiseContainer {
+    width: 100%;
+    /* background-color: #101047; */
+    padding: 50px 70px;
+    color: white;
+    text-align: left;
+    /* margin-bottom: 100px; */
+
+    .heading{
+        /* color: #FFFFFF; */
+    }
+  
+
+  }
+  
+  .btn {
+    background: #5B21FF;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    white-space: nowrap;
+  }
+  
+  .btn:hover {
+    background: #5B21FF;
+    /* border: 1px solid #6841ea; */
+  }
+  
+  .authGroup {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 1rem;
+  }
+  
+  /* Description */
+  .expertiseDescription {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 auto 40px;
+    text-align: left;
+    color: #000000;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 35px;
+    /* width: 70%; */
+  }
+
+  .expertiselistSection{
+    color: #333;
+        
+        .list {
+          list-style: none;
+          padding-left: 35px;
+          margin-bottom: 55px;
+        }
+
+
+        
+        .list li {
+          margin-bottom: 8px;
+          font-size: 18px;
+        }
+        
+        .bold {
+          font-weight: bold;
+        }
+        
+        .description {
+          margin-top: 10px;
+          color: #555;
+          font-size: 18px;
+        }
+        
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .expertiseContainer {
+      padding: 40px 50px;
+       
+
+    }
+  
+    .expertiseDescription {
+      font-size: 22px;
+      margin-bottom: 25px;
+      width: 100%;
+    }
+
+    .expertiselistSection{
+
+        .list{
+            margin-bottom: 30px;
+        }
+    
+    .list li {
+      font-size: 17px;
+    }
+    
+    .description {
+      font-size: 17px;
+    }
+    
+}
+
+  }
+  
+  @media (max-width: 768px) {
+    .expertiseContainer {
+      padding: 30px 30px;
+
+  
+    }
+  
+    .expertiseDescription {
+      font-size: 20px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      width: 100%;
+    }
+    .expertiselistSection{
+
+        .list{
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+    
+      .list li {
+        font-size: 16px;
+      }
+      
+      .description {
+        font-size: 16px;
+      }
+  }
+      
+  }
+  
+  @media (max-width: 480px) {
+    .expertiseContainer {
+      padding: 30px 20px;
+
+
+      .btn{
+        width: 100%;
+      }
+    }
+  
+    .expertiseDescription {
+     margin-bottom: 18px;
+      font-size: 18px;
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    .expertiselistSection{
+
+        .list{
+            margin-bottom: 10px;
+            padding-left: 15px;
+        }
+    
+      .list li {
+        font-size: 16px;
+      }
+      
+      .description {
+        font-size: 16px;
+      }
+  }  
+
+    
+  }
+
+
+
+
+
+  
+  /* ******************************************************* */
+  /* section third 3 */
+  
+  .whyContainer {
+    width: 100%;
+    /* background-color: #101047; */
+    padding: 50px 70px;
+    color: white;
+    text-align: left;
+    /* margin-bottom: 100px; */
+
+    .heading{
+     white-space: normal;
+    }
+  }
+  
+  .btn {
+    background: #5B21FF;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    white-space: nowrap;
+  }
+  
+  .btn:hover {
+    background: #5B21FF;
+    /* border: 1px solid #6841ea; */
+  }
+  
+  .authGroup {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 1rem;
+  }
+  
+  /* Description */
+  .whyDescription {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 auto 40px;
+    text-align: left;
+    color: #000000;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    /* width: 70%; */
+  }
+
+  .optimize{
+    font-size: 30px;
+    font-weight: 700;
+    color: #8470BE;
+    /* text-align: left; */
+    white-space: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+  }
+
+  .optimizedescription{
+    font-size: 21px;
+    font-weight: 400;
+    margin: 0 auto 40px;
+    text-align: left;
+    color: #000000;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+  }
+
+  .listSection{
+          color: #333;
+        
+        .list {
+          list-style:none;
+          /* padding-left: 20px; */
+          padding-left: 35px;
+        }
+        
+        .list li {
+          margin-bottom: 8px;
+          font-size: 18px;
+        }
+        
+        .bold {
+          font-weight: bold;
+        }
+        
+        .description {
+          margin-top: 10px;
+          color: #555;
+          font-size: 18px;
+          margin-left: 15px;
+        }
+        
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .whyContainer {
+      padding: 40px 50px;
+       
+
+    }
+  
+    .whyDescription {
+      font-size: 23px;
+      width: 100%;
+    }
+
+    .optimize{
+      font-size: 26px;
+      margin-top: 40px;
+    }
+  
+    .optimizedescription{
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .listSection{
+
+
+    
+    .list li {
+      font-size: 17px;
+    }
+    
+    .description {
+      font-size: 17px;
+    }
+    
+}
+
+  }
+  
+  @media (max-width: 768px) {
+    .whyContainer {
+      padding: 30px 30px;
+
+  
+      .header{
+        flex-wrap: wrap;
+      }
+    }
+  
+    .whyDescription {
+      font-size: 21px;
+      width: 100%;
+    }
+
+    .optimize{
+      font-size: 22px;
+      margin-top: 40px;
+    }
+  
+    .optimizedescription{
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .listSection{
+    
+      .list{
+        padding-left: 20px;
+      }
+      .list li {
+        font-size: 16px;
+      }
+      
+      .description {
+        font-size: 16px;
+      }
+  }
+      
+  }
+  
+  @media (max-width: 480px) {
+    .whyContainer {
+      padding: 30px 20px;
+
+
+      .btn{
+        width: 100%;
+      }
+    }
+  
+    .whyDescription {
+      font-size: 19px;
+      width: 100%;
+    }
+
+    .optimize{
+      font-size: 20px;
+      margin-top: 40px;
+    }
+  
+    .optimizedescription{
+      font-size: 17px;
+      margin-bottom: 15px;
+    }
+
+    .listSection{
+    
+      .list{
+        padding-left: 15px;
+      }
+      .list li {
+        font-size: 16px;
+      }
+      
+      .description {
+        font-size: 16px;
+      }
+  }  
+
+    
+  }
+
+    
+    /* ******************************************************** */
+    /* Heading CSS media Queries */
+    
+   
+/* heading part */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Heading */
+  .heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #8470BE;
+    text-align: left;
+    white-space: nowrap;
+  }
+  
+  /* Lines */
+  .lines {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+  
+  .lines div {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #99999933;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .header {
+       
+        gap: 0.8rem;
+    }
+  
+    .heading {
+        font-size: 30px; /* Slightly smaller heading */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heading {
+        font-size: 26px; /* Reduce heading size for tablets */
+    }
+    
+    .header {
+        margin-bottom: 30px;
+        gap: 0.6rem;
+    }
+  
+    .lines div {
+        height: 1.5px; /* Slightly thinner lines */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heading {
+        font-size: 22px; /* Even smaller for mobile */
+    }
+  
+    .header {
+        gap: 0.5rem;
+        margin-bottom: 20px;
+    }
+  
+    .lines div {
+        height: 1px; /* Thinner lines for compact design */
+    }
+  }
+  

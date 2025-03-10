@@ -1,0 +1,14 @@
+import React from 'react'
+import ProductSupply from '../ProductSupply/ProductSupply';
+
+
+function WaterTreatment() {
+  return (
+    <div><ProductSupply 
+    heading="Industrial Tools & Equipment" 
+    paraContent="Discover a wide range of high-quality industrial tools and equipment designed for various applications."
+  /></div>
+  )
+}
+
+export default WaterTreatment

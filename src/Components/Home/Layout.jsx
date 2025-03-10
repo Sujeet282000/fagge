@@ -2,6 +2,7 @@ import React from 'react'
 import {HeroSection} from './HeroSection/HeroSection'
 import {OverviewSection} from './OverviewSection/OverviewSection'
 import {ServicesSection} from './ServicesSection/ServicesSection'
+import {IndustriesServe} from './IndustriesServe/IndustriesServe'
 import {ProductsSection} from './ProductSection/ProductsSection'
 
 function Layout() {
@@ -10,7 +11,8 @@ function Layout() {
           <HeroSection></HeroSection>
           <OverviewSection></OverviewSection>
           <ServicesSection></ServicesSection>
-          <ProductsSection></ProductsSection>
+          <IndustriesServe></IndustriesServe>
+          {/* <ProductsSection></ProductsSection> */}
     </div>
   )
 }

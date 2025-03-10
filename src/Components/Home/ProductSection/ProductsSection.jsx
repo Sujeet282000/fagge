@@ -7,6 +7,7 @@ import heartIcon from "../../../Assests/icons/heartIcon.svg";
 import arrowleft from "../../../Assests/icons/leftArrow.svg";
 import arrowright from "../../../Assests/icons/rightArrow.svg";
 import Carousel from "react-multi-carousel";
+import manualImage from '../../../Assests/Images/pro-man.jpg'
 
 import React from "react";
 // import Carousel from "react-multi-carousel";
@@ -19,8 +20,7 @@ const products = [
     rating: 4.8,
     price: 150.0,
     image: productImage1,
-    description:
-      "Protect your team with our comprehensive range of high-quality PPE, from gloves to respiratory gear, designed for safety in any environment.",
+    description:["This space will be used for the clients testimonials for Hyproc. This space will be used for the clients testimonials for Hyproc." ,"This space will be used for the clients testimonials for Hyproc.This space will be used for the clients.","This space will be used for the clients testimonials for Hyproc. This space will be used for."]
   },
   {
     id: 2,
@@ -28,8 +28,7 @@ const products = [
     rating: 5.0,
     price: 1250.0,
     image: productImage2,
-    description:
-      "Protect your team with our comprehensive range of high-quality PPE, from gloves to respiratory gear, designed for safety in any environment.",
+    description:["This space will be used for the clients testimonials for Hyproc. This space will be used for the clients testimonials for Hyproc." ,"This space will be used for the clients testimonials for Hyproc.This space will be used for the clients.","This space will be used for the clients testimonials for Hyproc. This space will be used for."]
   },
   {
     id: 3,
@@ -37,8 +36,7 @@ const products = [
     rating: 4.5,
     price: 10500.0,
     image: productImage3,
-    description:
-      "Protect your team with our comprehensive range of high-quality PPE, from gloves to respiratory gear, designed for safety in any environment.",
+    description:["This space will be used for the clients testimonials for Hyproc. This space will be used for the clients testimonials for Hyproc." ,"This space will be used for the clients testimonials for Hyproc.This space will be used for the clients.","This space will be used for the clients testimonials for Hyproc. This space will be used for."]
   },
 ];
 
@@ -76,12 +74,12 @@ const arrowStyle = {
 };
 const CustomRight = ({ onClick }) => (
   <button className={styles.arrowright} onClick={onClick} style={arrowStyle}>
-    <img src={arrowright} alt="" style={{ fontSize: "50px" }}/>
+    <img src={arrowright} alt=""/>
   </button>
 );
 const CustomLeft = ({ onClick }) => (
   <button className={styles.arrowleft} onClick={onClick} style={arrowStyle}>
-    <img src={arrowleft} alt=""  style={{ fontSize: "50px" }} />
+    <img src={arrowleft} alt="" />
   </button>
 );
 
@@ -92,7 +90,7 @@ export function ProductsSection() {
     <section className={styles.productsSection}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.heading}>Our Products</h2>
+          <h2 className={styles.heading}>Testimonial</h2>
           <div className={styles.lines}>
             <div></div>
             <div></div>
@@ -104,7 +102,7 @@ export function ProductsSection() {
           
         <Carousel
         responsive={responsive}
-        autoPlay={true}
+        // autoPlay={true}
         swipeable={true}
         draggable={true}
         infinite={true}
@@ -120,51 +118,18 @@ export function ProductsSection() {
           {products.map((product) => (
             <div key={product.id} className={styles.card}>
               <div className={styles.imageContainer}>
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className={styles.image}
-                />
+                <div >
+                   <img className={styles.image} src={manualImage} alt="" />
+                </div>
+                <div className={styles.name}>Client’s Name</div>
+                <div className={styles.designation}>Designation</div>
               </div>
               <div className={styles.content}>
-                <div>
-                  <div className={styles.topRow}>
-                    <div className={styles.rating}>
-                        <img className={styles.star} src={starRating} alt="" />
-                      <span className={styles.ratingValue}>
-                        {product.rating}
-                      </span>
-                    </div>
-                    <div className={styles.slideImages}>
-                      <span className={styles.imageCount}>1</span>
-                      <span className={styles.imageCount}>2</span>
-                    </div>
-                    <button className={styles.heartButton}>
-                      <div className={styles.heartIcon}>
-                        <img src={heartIcon} alt="" />
-                      </div>
-                    </button>
-                  </div>
-                  <div>
-                    <span className={styles.reviews}>236 Reviews</span>
-                  </div>
-                </div>
-                <div>
-                  <div className={styles.title}>{product.name}</div>
+                {product.description?.map((item) => (
                   <div className={styles.description}>
-                    {product.description}
-                    <p className="mt-3">Protect your team with our protect your team with our comprehensive range of high-quality PPE, from gloves to respiratory gear, designed. 
-                    </p>
+                    {item}
                   </div>
-                </div>
-                <div  className={styles.footer_card}>
-                  <div className={styles.price}>
-                    ${product.price.toFixed(2)}
-                  </div>
-                  <div>
-                    <button className={styles.addToCart}>Add to Cart</button>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           ))}

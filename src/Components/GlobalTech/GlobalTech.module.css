@@ -1,0 +1,292 @@
+
+
+.globalTechOverviewSection {
+  width: 100%;
+}
+
+.globalTechBackground {
+  background-size: cover;
+  background-position: center;
+}
+
+.globalTechOverlay {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: flex-start;
+  background: rgb(0 0 0 / 70%);
+  padding: 50px 40px;
+  color: white;
+}
+
+.overlaySection {
+  max-width: 900px;
+}
+
+.globalTechTitle {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.globalTechSubtitle {
+  font-size: 29px;
+  font-weight: 600;
+  color: #d1d5db;
+  margin-bottom: 50px;
+}
+
+.globalTechText {
+  font-size: 19px;
+  font-weight: 400;
+  color: #e5e7eb;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .globalTechOverlay {
+    padding: 50px 35px;
+    min-height: 80vh;
+  }
+
+  .globalTechTitle {
+    font-size: 40px;
+  }
+
+  .globalTechSubtitle {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .globalTechText {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .globalTechOverlay {
+    padding: 40px 30px;
+    min-height: 75vh;
+  }
+
+  .globalTechTitle {
+    font-size: 32px;
+  }
+
+  .globalTechSubtitle {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .globalTechText {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .globalTechOverlay {
+    padding: 30px 20px;
+    min-height: 75vh;
+  }
+
+  .globalTechTitle {
+    font-size: 30px;
+  }
+
+  .globalTechSubtitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .globalTechText {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+
+
+
+
+/* ************************************ */
+
+/* *********************************************************** */
+/* section 6 */
+
+/* ******************************************************* */
+/* section third 3 */
+
+.ourAgentContainer {
+    width: 100%;
+    /* background-color: #101047; */
+    padding: 50px 70px;
+    color: white;
+    text-align: left;
+    margin-bottom: 100px;
+  
+    .heading {
+      white-space: normal;
+      width: 80%;
+    }
+  }
+  
+  .btn {
+    background: #5B21FF;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    white-space: nowrap;
+  }
+  
+  .btn:hover {
+    background: #5B21FF;
+    /* border: 1px solid #6841ea; */
+  }
+  
+  .authGroup {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 1rem;
+  }
+  
+  /* Description */
+  .ourAgentDescription {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 auto 40px;
+    text-align: left;
+    color: #000000;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    width: 70%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .ourAgentContainer {
+      padding: 40px 50px;
+       
+    .heading {
+      white-space: normal;
+      width: 80%;
+    }
+    }
+  
+    .ourAgentDescription {
+      font-size: 22px;
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .ourAgentContainer {
+      padding: 30px 30px;
+
+       
+    .heading {
+      white-space: normal;
+      width: 100%;
+    }
+    }
+  
+    .ourAgentDescription {
+      font-size: 20px;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ourAgentContainer {
+      padding: 30px 20px;
+
+      .heading {
+        white-space: normal;
+        width: 100%;
+      }
+
+      .btn{
+        width: 100%;
+      }
+    }
+  
+    .ourAgentDescription {
+      font-size: 18px;
+      width: 100%;
+    }
+  }
+  
+  /* ******************************************************** */
+  /* Heading CSS media Queries */
+  
+  /* heading part */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Heading */
+  .heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #8470BE;
+    text-align: left;
+    white-space: normal;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.8rem;
+    }
+  
+    .heading {
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 26px;
+    }
+  
+    .header {
+      margin-bottom: 30px;
+      gap: 0.6rem;
+    }
+  
+    .lines div {
+      height: 1.5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heading {
+      font-size: 22px;
+    }
+  
+    .header {
+      gap: 0.5rem;
+      margin-bottom: 20px;
+    }
+  
+    .lines div {
+      height: 1px;
+    }
+  }
+  

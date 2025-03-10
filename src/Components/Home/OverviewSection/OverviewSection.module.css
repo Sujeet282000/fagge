@@ -2,7 +2,8 @@
   /* padding: 4rem 0; */
   
   .Overview_container {
-      padding: 50px;
+      padding: 50px 60px;
+      padding-bottom: 10px;
   }
   
   .header {
@@ -10,15 +11,15 @@
       align-items: center;
       gap: 1.2rem;
       justify-content: space-between;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
   }
   
   .heading {
-      font-size: 42px;
+      font-size: 36px;
       font-weight: 700;
       color: #8470BE;
       text-align: left;
-      white-space: nowrap;
+      /* white-space: nowrap; */
   }
   
   .lines {
@@ -37,19 +38,38 @@
   
   .grid {
       display: grid;
-      gap: 3.5rem;
+      gap: 3.9rem;
       grid-template-columns: 1fr;
+  }
+
+  .btn {
+    background: #5B21FF;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+  }
+
+  .buttons{
+    margin-top: 30px;
+  }
+  
+  .btn:hover {
+    background-color: #5B21FF;
   }
   
   @media (min-width: 900px) {
       .grid {
           grid-template-columns: 1fr 1fr;
+          align-items: center;
       }
   }
   
   .imageWrapper {
       position: relative;
-      height: 350px;
+      height: 390px;
       overflow: hidden;
       border-radius: 20px;
   }
@@ -63,7 +83,7 @@
   .textContent {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 1.7rem;
   }
   
   .paragraph {
@@ -75,11 +95,15 @@
   /* Responsive Design */
   @media (max-width: 900px) {
       .Overview_container {
-          padding: 30px;
+          padding: 50px 40px;
       }
 
+      .header {
+        margin-bottom: 40px;
+    }
+
       .heading {
-          font-size: 36px;
+          font-size: 32px;
       }
 
       .grid {
@@ -91,19 +115,24 @@
       }
 
       .paragraph {
-          font-size: 18px;
+          font-size: 17px;
+      }
+      .btn {
+        font-size: 17px;
+     }
+     .buttons{
+        margin-top: 0px;
       }
   }
 
   @media (max-width: 600px) {
       .Overview_container {
-          padding: 20px;
+          padding: 40px 20px;
       }
 
       .header {
-          flex-direction: column;
-          align-items: flex-start;
           gap: 0.8rem;
+          margin-bottom: 30px;
       }
 
       .heading {
@@ -121,6 +150,13 @@
 
       .paragraph {
           font-size: 16px;
+      }
+
+      .btn {
+        font-size: 16px;
+     }
+     .buttons{
+        margin-top: 0px;
       }
   }
 }
