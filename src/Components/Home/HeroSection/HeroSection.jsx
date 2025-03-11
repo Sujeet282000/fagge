@@ -4,7 +4,7 @@ import styles from "./HeroSection.module.css";
 
 import {  useNavigate } from 'react-router-dom';
 
-export function HeroSection() {
+export function HeroSection({isHomePage}) {
 
   const navigate = useNavigate();
 
@@ -13,7 +13,7 @@ export function HeroSection() {
   }
 
   return (
-    <section className={styles.heroSection}>
+    <section className={` ${isHomePage ? styles.otherHeroSection : styles.heroSection}`}>
       <div className={styles.container}>
         <div className={styles.leftContent}>
           <div>

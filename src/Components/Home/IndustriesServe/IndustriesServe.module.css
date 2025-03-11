@@ -15,7 +15,7 @@
     }
     
     .heading {
-        font-size: 36px;
+        font-size: 38px;
         font-weight: 700;
         color: #8470BE;
         text-align: left;
@@ -24,7 +24,7 @@
     
     .subHeading{
         font-weight: 500;
-        font-size: 22px;
+        font-size: 20px;
         line-height: 28.13px;
         color: #000000;
         margin: 0px 10px;
@@ -102,8 +102,8 @@
         
     }
   
-    .cardContent {
-        font-size: 18px;
+    .cardDescription {
+        font-size: 16px;
         font-weight: 400;
         color: #000000;
     }
@@ -142,7 +142,7 @@
         }
   
         .heading {
-            font-size: 32px;
+            font-size: 34px;
         }
         .subHeading{
             margin-bottom: 40px;
@@ -152,8 +152,8 @@
             font-size: 19px;
             height: auto;
         }
-        .cardContent {
-            font-size: 17px;
+        .cardDescription {
+            font-size: 16px;
         }
         .card {
             padding: 18px;
@@ -172,7 +172,7 @@
       }
   
         .heading {
-            font-size: 28px;
+            font-size: 27px;
         }
         .subHeading{
             margin-bottom: 30px;
@@ -189,11 +189,11 @@
         }
   
         .cardTitle {
-            font-size: 18px;
+            font-size: 19px;
             height: auto;
         }
   
-        .cardContent {
+        .cardDescription {
             font-size: 16px;
         }
     }

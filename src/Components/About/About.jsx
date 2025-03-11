@@ -114,8 +114,8 @@ function About() {
         <div className={styles.offerContainer}>
           {/* <h2 className={styles.offerHeading}>What we offer</h2> */}
 
-          <div className={styles.offerContent}>
-            <section className={styles.offerSection}>
+          <div  className={`${styles.offerContent}`}>
+            <div className={` ${styles.offerSection}`}>
               <h3 className={styles.offerSubheading}>
                 Global Reach. Local Expertise.
               </h3>
@@ -131,9 +131,9 @@ function About() {
                 <li>🤝 Trusted supplier partnerships</li>
                 <li>🏭 Industry-specific solutions</li>
               </ul>
-            </section>
+            </div>
 
-            <section className={styles.offerSection}>
+            <div className={`${styles.offerSection}`}>
               <h3 className={styles.offerSubheading}>
                 End-to-End Procurement Solutions
               </h3>
@@ -156,11 +156,11 @@ function About() {
                  <span className={styles.leftAlign}> Solutions tailored to your industry’s unique demands</span>
                 </li>
               </ul>
-            </section>
+            </div>
           </div>
-          <div className={styles.offerImageWrapper}>
+          {/* <div className={styles.offerImageWrapper}>
             <img src={offerNewImage} alt="Offer" className={styles.offerImage} />
-          </div>
+          </div> */}
         </div>
       </div>
 

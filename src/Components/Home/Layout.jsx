@@ -8,7 +8,7 @@ import {ProductsSection} from './ProductSection/ProductsSection'
 function Layout() {
   return (
     <div>
-          <HeroSection></HeroSection>
+          {/* <HeroSection></HeroSection> */}
           <OverviewSection></OverviewSection>
           <ServicesSection></ServicesSection>
           <IndustriesServe></IndustriesServe>

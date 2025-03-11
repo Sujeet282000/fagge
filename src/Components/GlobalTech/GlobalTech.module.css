@@ -38,7 +38,7 @@
 }
 
 .globalTechText {
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 400;
   color: #e5e7eb;
   line-height: 1.8;
@@ -52,7 +52,7 @@
   }
 
   .globalTechTitle {
-    font-size: 40px;
+    font-size: 44px;
   }
 
   .globalTechSubtitle {
@@ -72,7 +72,7 @@
   }
 
   .globalTechTitle {
-    font-size: 32px;
+    font-size: 33px;
   }
 
   .globalTechSubtitle {
@@ -81,7 +81,7 @@
   }
 
   .globalTechText {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.6;
   }
 }
@@ -93,7 +93,7 @@
   }
 
   .globalTechTitle {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .globalTechSubtitle {
@@ -129,13 +129,13 @@
   
     .heading {
       white-space: normal;
-      width: 80%;
+      width: 85%;
     }
   }
   
   .btn {
     background: #5B21FF;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     padding: 8px 30px;
     border: none;
@@ -158,7 +158,7 @@
   
   /* Description */
   .ourAgentDescription {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     margin: 0 auto 40px;
     text-align: left;
@@ -181,7 +181,7 @@
     }
   
     .ourAgentDescription {
-      font-size: 22px;
+      font-size: 20px;
       width: 80%;
     }
   }
@@ -198,7 +198,7 @@
     }
   
     .ourAgentDescription {
-      font-size: 20px;
+      font-size: 219px;
       width: 100%;
     }
   }
@@ -218,7 +218,7 @@
     }
   
     .ourAgentDescription {
-      font-size: 18px;
+      font-size: 19px;
       width: 100%;
     }
   }
@@ -239,7 +239,7 @@
   
   /* Heading */
   .heading {
-    font-size: 36px;
+    font-size: 38px;
     font-weight: 700;
     color: #8470BE;
     text-align: left;
@@ -256,13 +256,13 @@
     }
   
     .heading {
-      font-size: 30px;
+      font-size: 34px;
     }
   }
   
   @media (max-width: 768px) {
     .heading {
-      font-size: 26px;
+      font-size: 27px;
     }
   
     .header {
@@ -277,7 +277,7 @@
   
   @media (max-width: 480px) {
     .heading {
-      font-size: 22px;
+      font-size: 27px;
     }
   
     .header {

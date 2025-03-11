@@ -5,11 +5,15 @@ import hyproclogo from "../../../Assests/Images/hyproclog0.png";
 import hamnburgerIcon from "../../../Assests/icons/ic-hamburg.svg";
 import hamnburgeCrossIcon from "../../../Assests/icons/ic-cross-white.svg";
 import searchIcon from "../../../Assests/icons/searchIcon.svg";
+import {HeroSection} from '../../Home/HeroSection/HeroSection'
+import globalTechbg from "../../../Assests/Images/homebgimage.png";
 
 const Header = () => {
   const location = useLocation();
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  const isHomePage = location.pathname === "/";
 
   const toggleMobileMenu = () => {
     setShowMobileMenu(!showMobileMenu);
@@ -47,7 +51,8 @@ const Header = () => {
 
 
   return (
-    <header className={styles.header_section}>
+    <div    style={{ backgroundImage: `url(${globalTechbg})` }}>
+      <header className={` ${isHomePage ?styles.otherHeader : styles.header_section}`}>
       <div className={styles.topBar}>
 
 
@@ -109,7 +114,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink to="/global" className={location.pathname === "/global" ? styles.navLinkActive : styles.navLink}>
-                GLOBAL TECH
+                GLOBAL TEAM
               </NavLink>
             </li>
             <li>
@@ -150,7 +155,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink to="/global" className={location.pathname === "/global" ? styles.navLinkActive : styles.navLink} onClick={toggleMobileMenu}>
-                GLOBAL TECH
+                GLOBAL TEAM
               </NavLink>
             </li>
             <li>
@@ -172,6 +177,10 @@ const Header = () => {
         </nav>
       )}
     </header>
+    { isHomePage &&
+    <HeroSection isHomePage={isHomePage}></HeroSection>
+   }
+    </div>
   );
 };
 

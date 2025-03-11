@@ -5,6 +5,14 @@
   color: white;
 }
 
+.otherHeroSection{
+  /* background: rgb(0 0 0 / 70%); */
+  background-color: #19174cd1;
+  padding: 50px 40px;
+  padding-bottom: 70px;
+  color: white;
+}
+
 .container {
   display: grid;
   gap: 4rem;
@@ -13,7 +21,7 @@
 
 .bttn {
   background: #5B21FF;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   padding: 8px 30px;
   border: none;
@@ -57,7 +65,7 @@
       font-size: 56px;
   }
   .contentpart{
-    font-size: 29px;
+    font-size: 38px;
   }
   .container {
     grid-template-columns: 3fr 1fr;
@@ -88,13 +96,13 @@
 
 .statValue {
   color: #4353FF;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 700;
   white-space: nowrap;
 }
 
 .statDescription {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: #FFFFFF;
 }
@@ -102,17 +110,17 @@
 
 @media (max-width: 900px) {
   .statValue {
-    font-size: 24px;
+    font-size: 20px;
   }
   .heading {
     font-size: 33px;
     /* text-align: center; */
 }
 .contentpart{
-  font-size: 22px;
+  font-size: 25px;
 }
 .bttn {
-  font-size: 17px;
+  font-size: 14px;
 }
 }
 
@@ -123,14 +131,14 @@
   }
   
   .statValue {
-    font-size: 22px;
+    font-size: 19px;
   }
   
   .statDescription {
-    font-size: 18px;
+    font-size: 16px;
   }
   .heading {
-      font-size: 30px;
+      font-size: 33px;
       text-align: center;
   }
 
@@ -144,7 +152,7 @@
   }
 
   .bttn {
-     font-size: 16px;
+     font-size: 14px;
   }
 
   .rightContent {
@@ -152,7 +160,7 @@
   }
 
   .contentpart{
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
   }
 

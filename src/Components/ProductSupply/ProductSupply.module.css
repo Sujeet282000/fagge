@@ -12,7 +12,7 @@
   
   .heroTechBackground {
     background-size: cover;
-    /* background-position: center; */
+    background-position: center;
   }
   
   .heroTechOverlay {
@@ -24,6 +24,7 @@
     background: rgb(0 0 0 / 70%);
     padding: 50px 40px;
     color: white;
+    min-height: 90vh;
   }
   
   .overlaySection {
@@ -45,7 +46,7 @@
   }
   
   .heroTechText {
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 400;
     color: #e5e7eb;
     line-height: 1.8;
@@ -59,7 +60,7 @@
     }
   
     .heroTechTitle {
-      font-size: 40px;
+      font-size: 44px;
     }
   
     .heroTechSubtitle {
@@ -79,7 +80,7 @@
     }
   
     .heroTechTitle {
-      font-size: 32px;
+      font-size: 33px;
     }
   
     .heroTechSubtitle {
@@ -88,7 +89,7 @@
     }
   
     .heroTechText {
-      font-size: 17px;
+      font-size: 16px;
       line-height: 1.6;
     }
   }
@@ -100,7 +101,7 @@
     }
   
     .heroTechTitle {
-      font-size: 30px;
+      font-size: 33px;
     }
   
     .heroTechSubtitle {
@@ -317,6 +318,9 @@
   max-width: 1350px;
   margin: 30px auto;
   font-family: Arial, sans-serif;
+
+  --bs-accordion-btn-icon: url(../../Assests/icons//lowerDrop.svg) !important;
+  --bs-accordion-btn-active-icon: url(../../Assests/icons//lowerDrop.svg) !important;
 }
 
 /* Individual Accordion Item */
@@ -324,17 +328,20 @@
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 10px;
+  box-shadow: 0px 2px 2px 0px #00000040;
+
 }
 
 /* Accordion Button Styling */
 .accordion-button {
   font-size: 18px;
   font-weight: bold;
+ 
 }
 
 .accordionHeader {
   width: 100%;
-  background: #4353FF;
+  background: #19174C;
   color: white;
   padding: 14px 18px;
   font-size: 18px;
@@ -351,15 +358,16 @@
 
 /* Remove Bootstrap default styles when active */
 .accordionHeader:not(.collapsed) {
-  background: #4353FF !important;
+  background: #19174C !important;
   box-shadow: 0px 2px 2px 0px #00000040;
-
+  
   color: white !important;
   box-shadow: none;
 }
 
 /* Hide default Bootstrap focus shadow */
 .accordion-button:focus {
+ 
   box-shadow: none;
 }
 
@@ -512,12 +520,12 @@
   }
 
   .accordionHeading {
-    font-size: 18px;
+    font-size: 19px;
     margin-bottom: 10px;
   }
 
   .accordionText {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 

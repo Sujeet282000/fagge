@@ -15,7 +15,7 @@
   }
   
   .heading {
-      font-size: 36px;
+      font-size: 38px;
       font-weight: 700;
       color: #8470BE;
       text-align: left;
@@ -44,7 +44,7 @@
 
   .btn {
     background: #5B21FF;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     padding: 8px 30px;
     border: none;
@@ -89,7 +89,7 @@
   .paragraph {
       color: #000000CC;
       font-weight: 400;
-      font-size: 18px;
+      font-size: 16px;
   }
   
   /* Responsive Design */
@@ -103,7 +103,7 @@
     }
 
       .heading {
-          font-size: 32px;
+          font-size: 34px;
       }
 
       .grid {
@@ -115,10 +115,10 @@
       }
 
       .paragraph {
-          font-size: 17px;
+          font-size: 16px;
       }
       .btn {
-        font-size: 17px;
+        font-size: 14px;
      }
      .buttons{
         margin-top: 0px;
@@ -136,7 +136,7 @@
       }
 
       .heading {
-          font-size: 28px;
+          font-size: 27px;
       }
 
       .grid {
@@ -153,7 +153,7 @@
       }
 
       .btn {
-        font-size: 16px;
+        font-size: 14px;
      }
      .buttons{
         margin-top: 0px;
