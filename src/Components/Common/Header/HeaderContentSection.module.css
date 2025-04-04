@@ -1,0 +1,265 @@
+
+
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 290px;
+    /* background: url("https://images.unsplash.com/photo-1504432842672-1a79f78e4084?auto=format&fit=crop&q=80&w=1920")
+      no-repeat center center/cover; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 0px 40px;
+
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.4); */
+  }
+  
+  .content {
+    position: relative;
+    color: white;
+    text-align: left;
+    /* z-index: 2;
+    max-width: 700px; */
+    padding: 0px 45px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    max-width: 850px;
+  }
+  .button {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 14px 0px;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .arrow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: 4px solid white;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  }
+  
+  .button:hover .arrow {
+    transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+
+
+
+/* imageslider */
+
+.container {
+    /* max-width: 1400px; */
+    margin: 0 auto;
+    padding: 32px 30px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  
+  .gridItem {
+    position: relative;
+    cursor: pointer;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0px 15px;
+    /* border: 4px solid #FFFFFFB2 */
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .active {
+    opacity: 1;
+  }
+  
+  .inactive {
+    /* opacity: 0.7; */
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: #00000099;
+
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .gridItem:hover .overlay {
+    opacity: 1;
+  }
+  
+  .label {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .overlayActive {
+    opacity: 1 !important;
+  }
+
+
+
+  
+
+/* Grid item with a white border */
+.gridItem {
+  position: relative;
+  cursor: pointer;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0px 15px;
+  border: none; /* Remove old white border */
+}
+
+/* Static White Border as an overlay */
+.borderWrapper {
+  position: absolute;
+  inset: 0;
+  border: 4px solid #FFFFFFB2; /* White border */
+  border-radius: 8px;
+  z-index: 3; /* Below the green border */
+  pointer-events: none;
+}
+
+/* Wrapper for the green animated border */
+.borderAnimationWrapper {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 4; /* Above everything, including white border */
+}
+
+/* Green Animated Border */
+.borderLine {
+  position: absolute;
+  border: 3px solid #008C1E;
+  border-radius: 8px;
+  opacity: 1;
+  z-index: 5; /* Highest priority */
+}
+
+/* Green Border Animation */
+.borderLeft {
+  left: 0px;
+  bottom: 0px;
+  width: 3px;
+  height: 0;
+  animation: borderLeft 1s linear forwards;
+}
+
+.borderTop {
+  left: 0px;
+  top: 0px;
+  width: 0;
+  height: 3px;
+  animation: borderTop 1s linear forwards;
+  animation-delay: 1s;
+}
+
+.borderRight {
+  right: 0px;
+  top: 0px;
+  width: 3px;
+  height: 0;
+  animation: borderRight 1s linear forwards;
+  animation-delay: 2s;
+}
+
+.borderBottom {
+  right: 0px;
+  bottom: 0px;
+  width: 0;
+  height: 3px;
+  animation: borderBottom 1s linear forwards;
+  animation-delay: 3s;
+}
+
+/* Border Animations */
+@keyframes borderLeft {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes borderTop {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes borderRight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes borderBottom {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

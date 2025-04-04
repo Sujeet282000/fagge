@@ -8,10 +8,10 @@ import {ProductsSection} from './ProductSection/ProductsSection'
 function Layout() {
   return (
     <div>
-          {/* <HeroSection></HeroSection> */}
-          <OverviewSection></OverviewSection>
-          <ServicesSection></ServicesSection>
-          <IndustriesServe></IndustriesServe>
+          <HeroSection></HeroSection>
+          {/* <OverviewSection></OverviewSection> */}
+          {/* <ServicesSection></ServicesSection> */}
+          {/* <IndustriesServe></IndustriesServe> */}
           {/* <ProductsSection></ProductsSection> */}
     </div>
   )
