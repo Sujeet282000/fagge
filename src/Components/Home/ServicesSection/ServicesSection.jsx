@@ -1,148 +1,83 @@
+import React from "react";
 import styles from "./ServicesSection.module.css";
-import ArrowRight from '../../../Assests/icons/arrowRight.svg'
-import Offer1 from '../../../Assests/icons/offer1.svg'
-import Offer2 from '../../../Assests/icons/offer2.svg'
-import Offer3 from '../../../Assests/icons/offer3.svg'
-import Offer4 from '../../../Assests/icons/offer4.svg'
-import Offer5 from '../../../Assests/icons/offer5.svg'
+import { Droplet, Truck, Factory, Heart, Zap } from "lucide-react";
 
-import arrowleft from "../../../Assests/icons/leftArrow.svg";
-import arrowright from "../../../Assests/icons/rightArrow.svg";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import servicesbg1 from "../../../Assests/Images/servicesbg1.jpeg";
+import servicesbg2 from "../../../Assests/Images/servicesbg2.jpeg";
+import servicesbg3 from "../../../Assests/Images/servicesbg3.jpeg";
+import servicesbg4 from '../../../Assests/Images/servicesbg4.jpeg'
+import servicesbg5 from '../../../Assests/Images/servicesbg5.jpeg'
 
-const services = [
+const industries = [
   {
-    title: "Dedicated Account Managers",
-    img : Offer1,
+    title: "Oil & Gas",
     description:
-      "Personalized support tailored to your business needs.",
+      "Optimized procurement processes ensuring safe, efficient, and reliable supply chains for high-value energy assets.",
+    icon: <Droplet className={styles.icon} />,
+    image: servicesbg1,
   },
   {
-    title: "Expert Procurement",
-    img : Offer2,
+    title: "Mining",
     description:
-     "Cost-effective sourcing with a focus on quality and efficiency.",
+      "Robust and reliable supply systems designed to withstand challenging conditions and ensure seamless operations in remote and difficult locations.",
+    icon: <Truck className={styles.icon} />,
+    image: servicesbg2,
   },
   {
-    title: "Global Sourcing Power",
-    img : Offer3,
+    title: "Manufacturing",
     description:
-      "Access to trusted suppliers worldwide.",
+      "Efficient sourcing solutions for streamlined production flow, minimizing costs and downtime while ensuring operations run seamlessly.",
+    icon: <Factory className={styles.icon} />,
+    image: servicesbg3,
   },
   {
-    title: "Logistics Made Simple",
-    img : Offer4,
+    title: "International Aid",
     description:
-      "Effortless coordination to streamline operations.",
+      "Agile and efficient logistics delivery and sourcing of supplies for critical humanitarian missions.",
+    icon: <Heart className={styles.icon} />,
+    image: servicesbg4,
   },
   {
-    title: "Flexible Shipping Solutions",
-    img : Offer5,
+    title: "Utilities",
     description:
-      "Custom air, sea, and land transport for seamless delivery.",
+      "Dependable and scalable solutions ensuring seamless service delivery and long-term success of critical infrastructure.",
+    icon: <Zap className={styles.icon} />,
+    image: servicesbg5,
   },
 ];
 
-
-const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 3000, min: 1600 }, 
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 1600, min: 1024 }, 
-    items: 4,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 768 }, 
-    items: 3,
-  },
-  mobile: {
-    breakpoint: { max: 768, min: 480 }, 
-    items: 2,
-  },
-  small: {
-    breakpoint: { max: 480, min: 0 }, 
-    items: 1,
-  },
-};
-
-
-
-
-const arrowStyle = {
-  background: "transparent",
-  border: 0,
-  color: "#000000",
-  fontSize: "80px",
-  display:"none"
-};
-const CustomRight = ({ onClick }) => (
-  <button className={styles.arrowright} onClick={onClick} style={arrowStyle}>
-    <img src={arrowright} alt="" style={{ fontSize: "50px" }}/>
-  </button>
-);
-const CustomLeft = ({ onClick }) => (
-  <button className={styles.arrowleft} onClick={onClick} style={arrowStyle}>
-    <img src={arrowleft} alt=""  style={{ fontSize: "50px" }} />
-  </button>
-);
-
-
 export function ServicesSection() {
   return (
-    <section className={styles.Services_section}>
-      <div className={styles.container}>
-
+    <section className={styles.section}>
+       {/* Heading and Description */}
        <div className={styles.header}>
-          <h2 className={styles.heading}>What we offer</h2>
-          <div className={styles.lines}>
-            <div></div>
-            <div></div>
-            <div></div>
+        <h2 className={styles.heading}>Industries We Serve</h2>
+        <p className={styles.subheading}>
+          Expert Procurement Services for Critical Global Industries
+        </p>
+      </div>
+    <div className={styles.container}>
+      
+     
+
+      {/* Industry Cards */}
+      {industries.map((industry, index) => (
+        <div key={index} className={styles.card}>
+          {/* Background Image */}
+          <div className={styles.imageWrapper}>
+            <img src={industry.image} alt={industry.title} className={styles.image} />
+            <div className={styles.overlay}></div>
+          </div>
+
+          {/* Content */}
+          <div className={styles.content}>
+            <div className={styles.iconWrapper}>{industry.icon}</div>
+            <h3 className={styles.title}>{industry.title}</h3>
+            <p className={styles.description}>{industry.description}</p>
           </div>
         </div>
-        <div className={styles.grid}>
-
-        <Carousel
-        responsive={responsive}
-        autoPlay={true}
-        swipeable={true}
-        draggable={true}
-        infinite={true}
-        keyBoardControl={true}
-        stagePadding={'5'}
-        className={styles.curoselList}
-        arrows
-        partialVisible={false}
-        itemClass={styles.carouselItem}
-        customRightArrow={<CustomRight />}
-        customLeftArrow={<CustomLeft />}
-      >
-          {services.map((service) => (
-
-            <div key={service.title} className={styles.card}>
-              <div className={styles.cardHeader}>
-                <div className="text-center"><img src={service.img} alt="" /></div>
-                <div className={styles.cardTitle}>{service.title}</div>
-              </div>
-              <div className={styles.cardContent}>
-                <div className={styles.cardDescription}>{service.description}</div>
-              </div>
-              {/* <div className={styles.cardFooter}>
-                <button className={styles.btn}>
-                 <img src={ArrowRight} alt="Arrow Right" />
-                </button>
-              </div> */}
-            </div>
-          ))}
-                    </Carousel>
-        </div>
-        <div className={styles.seperatorLine}>
-           <span className={styles.supplyChain}>Discover how we can streamline your supply chain.</span> <span className={styles.learnMore}>Learn More</span> 
-        </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </section>
   );
 }

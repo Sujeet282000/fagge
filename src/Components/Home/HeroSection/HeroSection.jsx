@@ -1,48 +1,32 @@
 import React from "react";
-import { Button } from 'react-bootstrap';
-import styles from "./HeroSection.module.css";
+import styles from './HeroSection.module.css';
 
-import {  useNavigate } from 'react-router-dom';
+import heroBg from "../../../Assests/Images/herobg.png";
 
-export function HeroSection({isHomePage}) {
-
-  const navigate = useNavigate();
-
-  const toggleDropdown = () => {
-    navigate('/contact');
-  }
-
+export function HeroSection() {
   return (
-    <section className={` ${isHomePage ? styles.otherHeroSection : styles.heroSection}`}>
-      <div className={styles.container}>
-        <div className={styles.leftContent}>
-          <div>
-            <div className={styles.heading}>
-            Seamless Global Procurement & Logistics, Tailored for Your Success
+    <section className={styles.Overview_section}>
+      <div className={styles.Overview_container}>
+        <div className={styles.grid}>
+          {/* Left: Text Content */}
+          <div className={styles.textContent}>
+            <h2 className={styles.heading}>
+              Fast, Reliable Solutions for Procurement & Supply Chain Success
+            </h2>
+            <p className={styles.paragraph}>
+              At Hyproc International, we simplify procurement and logistics to help your business grow. With over 25 years of expertise and a global supplier network, we deliver tailored, cost-effective solutions delivered on time, every time.
+            </p>
+            <p className={styles.paragraph}>
+              Whether you're scaling operations or optimizing your supply chain, our services adapt to your unique needs. Let us handle the complexity so you can focus on what matters most: your success.
+            </p>
+            <div className={styles.buttons}>
+              <a href="/services" className={styles.btn}>Explore Our Services</a>
             </div>
-            <div className={styles.contentpart}>
-            Delivering Reliable, Cost-Effective Solutions for Global Supply Chains
-            </div>
           </div>
-          <div className={styles.buttons}>
-            <button onClick={toggleDropdown} className={styles.bttn}>Get a Quote</button>
-            {/* <Button className={styles.bttn}>Contact Now</Button> */}
-          </div>
-        </div>
-        <div className={styles.rightContent}>
-          <div className={styles.stat}>
-            <div className={styles.statValue}>$100 Million</div>
-            <div className={styles.statDescription}>Overall Business Turnover</div>
-          </div>
-            <hr />
-          <div className={styles.stat}>
-            <div className={styles.statValue}>79 Offices</div>
-            <div className={styles.statDescription}>Our Infrastructure</div>
-          </div>
-            <hr />
-          <div className={styles.stat}>
-            <div className={styles.statValue}>38 Countries</div>
-            <div className={styles.statDescription}>Global Presence</div>
+
+          {/* Right: Image */}
+          <div className={styles.imageWrapper}>
+            <img src={heroBg} alt="Containers" className={styles.image} />
           </div>
         </div>
       </div>
