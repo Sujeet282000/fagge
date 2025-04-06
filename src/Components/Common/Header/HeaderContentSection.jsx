@@ -15,6 +15,7 @@ import homeAbout1 from "../../../Assests/Images/homeAbout1.png";
 import homeAbout2 from "../../../Assests/Images/homeAbout2.png";
 import homeAbout3 from "../../../Assests/Images/homeAbout3.png";
 import imagebg from '../../../Assests/Images/homePagebg.png'
+import newAroo from '../../../Assests/icons/newAroo.svg'
 
 const responsive = {
   superLargeDesktop: {
@@ -123,7 +124,7 @@ export default function HeaderContentSection({ onImageClick }) {
             {imageContent[images[activeIndex].label]?.title}
           </h1>
             <button className={styles.button}>
-              Get a Quote <ArrowRight className={styles.arrow} />
+              Get a Quote <img className={styles.arrow} src={newAroo} alt="" />
             </button>
           </div>
         </div>

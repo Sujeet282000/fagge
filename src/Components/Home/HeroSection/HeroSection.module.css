@@ -15,8 +15,8 @@
 }
 
 .heading {
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 42px;
+  font-weight: 400;
   color: #000064;
   text-align: left;
   margin-bottom: 25px;
@@ -24,7 +24,7 @@
 
 .paragraph {
   color: #333;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 40px;
 }
@@ -37,7 +37,7 @@
   color: #000064;
   display: inline-block;
   /* background: #000064; */
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   border: 2px solid #000064;
   padding: 12px 25px;

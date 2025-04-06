@@ -9,7 +9,7 @@ function Layout() {
   return (
     <div>
           <HeroSection></HeroSection>
-          {/* <OverviewSection></OverviewSection> */}
+          <OverviewSection></OverviewSection>
           {/* <ServicesSection></ServicesSection> */}
           {/* <IndustriesServe></IndustriesServe> */}
           {/* <ProductsSection></ProductsSection> */}

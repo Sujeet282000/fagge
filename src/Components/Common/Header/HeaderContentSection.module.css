@@ -69,6 +69,7 @@
     align-items: center;
     width: 45px;
     height: 45px;
+    padding: 6px;
     border: 4px solid white;
     border-radius: 50%;
     transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
@@ -261,5 +262,73 @@
   }
   to {
     width: 100%;
+  }
+}
+
+
+
+/* RESPONSIVE DESIGN */
+
+/* For tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    height: 250px;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 36px;
+    max-width: 600px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .gridItem {
+    height: 180px;
+  }
+}
+
+/* For mobile screens (below 768px) */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .content {
+    padding: 0px 20px;
+  }
+
+  .title {
+    font-size: 28px;
+    max-width: 100%;
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .arrow {
+    width: 35px;
+    height: 35px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .gridItem {
+    height: 150px;
   }
 }
