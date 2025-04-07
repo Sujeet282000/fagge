@@ -223,6 +223,9 @@
     border: none;
     color: white;
     cursor: pointer;
+    /* position: absolute;  */
+    left: 20px;
+    top: 20px;
   }
 
   .hamburger img {
@@ -248,7 +251,7 @@
   .mobileMenu {
     position: fixed;
     top: 0;
-    right: -100%;
+    left: -100%; /* Start off-screen on the left */
     width: 250px;
     height: 100vh;
     background: #19174C;
@@ -256,12 +259,12 @@
     flex-direction: column;
     align-items: center;
     z-index: 1001;
-    transition: right 0.4s ease-in-out;
-    box-shadow: -4px 0px 15px rgba(0, 0, 0, 0.3);
+    transition: left 0.4s ease-in-out; /* Slide in from the left */
+    box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.3);
   }
 
   .mobileMenu.openMenu {
-    right: 0;
+    left: 0; /* Slide into view */
   }
 
   .navList {
@@ -270,6 +273,30 @@
   }
 
   .navBar {
-    display: none;
+    display: none; /* Hide desktop navigation */
+  }
+
+  .mobileHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+  }
+
+
+
+  .rightSection {
+    display: none; /* Hide desktop logo in mobile view */
+  }
+
+  .searchIcon {
+    display: none; /* Hide desktop search icon in mobile view */
+  }
+
+  .mobileSearchIcon {
+    display: block; /* Show mobile search icon */
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
   }
 }
